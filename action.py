@@ -4,11 +4,11 @@ from email.mime.text import MIMEText
 from email.utils import formataddr
 
 def send_mail(log):
-    smtp_host = '' # 设置SMTP服务器
-    smtp_port = '' # 设置SMTP端口
-    mail_from = '' # 发信邮箱
-    mail_auth = '' # 发信邮箱密码/授权码
-    mail_to = [''] # 收信邮箱
+    smtp_host = 'smtp.qq.com' # 设置SMTP服务器
+    smtp_port = '587' # 设置SMTP端口
+    mail_from = '85971029@qq.com' # 发信邮箱
+    mail_auth = 'cmuaamgvboqrbgbi' # 发信邮箱密码/授权码
+    mail_to = ['1300427193@qq.com'] # 收信邮箱
 
     message = MIMEText(log, 'plain', 'utf-8')
     message['From'] = formataddr(['Bot', mail_from])
@@ -76,8 +76,8 @@ def print_msg(msg: str = "", isFirstLine: bool = False) -> str:
 
 if __name__ == '__main__':
     # 多账号用单个空格 间隔开
-    USERNAME = ''
-    PASSWORD = ''
+    USERNAME = '15393300327'
+    PASSWORD = 'Ty03091029'
     
     # 启用邮箱发信
     mail_enable = True
